@@ -8,6 +8,7 @@ if (NOT "${CMAKE_BUILD_TYPE}" STREQUAL "ReleaseNoOutFiles")
     add_definitions(-DHAVE_ASSERT_H)
     add_definitions(-DHAVE_FCNTL_H)
 endif() 
+add_definitions(-O3)
 
 include_directories(${CMAKE_SOURCE_DIR})
 add_subdirectory(beecrypt)
